@@ -1,11 +1,11 @@
 <div
 
-    class="flex gap-4 items-center justify-between w-full p-4 text-start select-none">
+    class="flex gap-4 items-center justify-between w-full p-4 text-start select-none bg-gray-100">
 
     <button type="button" x-show="onlyOne"
-            class="group relative inline-block overflow-hidden rounded-full border border-gray-100 bg-gray-200 text-sm font-medium text-slate-800 hover:text-violet-600 focus:outline-none focus:ring active:bg-indigo-600 active:text-white"
+            class="group relative inline-block overflow-hidden border border-white bg-white rounded-full w-[43px] h-[37px] flex items-center justify-center text-sm font-medium text-slate-800 hover:text-violet-600 focus:outline-none focus:ring active:bg-indigo-600 active:text-white"
             x-on:click="backToOther()"
-    >
+     style="width: 43px; height: 37px;">
         <span class="ease absolute left-0 top-0 h-0 w-0 border-t-2 border-violet-600 transition-all duration-200 group-hover:w-full"></span>
         <span class="ease absolute right-0 top-0 h-0 w-0 border-r-2 border-violet-600 transition-all duration-200 group-hover:h-full"></span>
         <span class="ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-violet-600 transition-all duration-200 group-hover:w-full"></span>
@@ -37,8 +37,9 @@
                         </x-filament::badge>
                     @endif
                 </span>
-        <span x-show="activeAccordion !== id">
-             @svg('heroicon-m-chevron-right','w-4 h-4 duration-200 ease-out')
+        <span class="group relative inline-block overflow-hidden border border-white bg-white rounded-full w-[36px] h-[37px] flex items-center justify-center text-sm font-medium text-slate-800 hover:text-violet-600 focus:outline-none focus:ring active:bg-indigo-600 active:text-white"
+              style="width: 36px; height: 37px;" x-show="activeAccordion !== id">
+             @svg('heroicon-m-chevron-right','w-6 h-6 duration-200 ease-out')
         </span>
     </button>
 </div>
