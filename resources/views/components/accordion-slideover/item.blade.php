@@ -31,7 +31,7 @@
         return true;
     }"
 
-    class="rounded-xl ring-1 ring-gray-950/10 dark:ring-white/20 fi-accordion-item group">
+    class="ring-1 ring-gray-950/10 dark:ring-white/20 fi-accordion-item group">
 
     <div x-show="activeAccordion !== id">
         @include('zeus-accordion::components.accordion-slideover.item-header')
